@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Homework 3</title>
+</head>
+
+<body>
+    <div class="container" >
+        <h1>HOMEWORK 3</h1>
+        <div class="mycontrols">
+            <label for="myslider" style="font-size:15px;font-weight: bold;">DIV COUNT</label>: <span id="myoutput"></span>
+            <input id="myslider" type="range" min="1" max="100" value="1" />
+            <br>
+            <label for="myfizz" style="font-size:20px;font-weight: bold;">FIZZ value</label>
+            <input id="myfizz" type="number" min="1" max="100" value="3" />
+            
+            <br>
+            <br>
+            
+            <label for="mybuzz" style="font-size:20px;font-weight: bold;">BUZZ value</label>
+            <input id="mybuzz" type="number" min="1" max="100" value="5" />
+        </div>
+        
+        <div class="mybtns">
+            <button class="btn btn-success" onclick="generateDivs()">GENERATE</button>
+            <button class="btn btn-danger" onclick="clearDivs()">CLEAR</button>
+            
+            <h3>DELETE:</h3>
+            <button id="delete-btn-1" class="del-1"> FIZ</button>
+            <button id="delete-btn-2" class="del-2">BUZ</button>
+             <button id="delete-btn-3" class="del-3">FIZBUZZ</button>
+             
+        </div>
+        <hr />
+        <main id="mymain"></main>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
